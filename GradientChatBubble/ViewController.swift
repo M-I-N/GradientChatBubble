@@ -80,7 +80,7 @@ class ViewController: UIViewController {
 
     func setupUI() {
         
-        let gradientBackgroundColors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        let gradientBackgroundColors = [UIColor.systemBlue.cgColor, UIColor.systemPurple.cgColor]
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = gradientBackgroundColors
@@ -101,7 +101,8 @@ class ViewController: UIViewController {
         view.addSubview(collectionView)
         
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.horizontalEdges.bottom.equalToSuperview()
         }
     }
     
