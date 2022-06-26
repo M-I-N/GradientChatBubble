@@ -13,6 +13,7 @@
 		AF0FB95628681A3E00481C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0FB95428681A3E00481C84 /* Main.storyboard */; };
 		AF0FB95828681A4300481C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0FB95728681A4300481C84 /* Assets.xcassets */; };
 		AF0FB95B28681A4300481C84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0FB95928681A4300481C84 /* LaunchScreen.storyboard */; };
+		AF0FB96428681A7E00481C84 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF0FB96328681A7E00481C84 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0FB96428681A7E00481C84 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = GradientChatBubble;
+			packageProductDependencies = (
+				AF0FB96328681A7E00481C84 /* SnapKit */,
+			);
 			productName = GradientChatBubble;
 			productReference = AF0FB94B28681A3E00481C84 /* GradientChatBubble.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = AF0FB94228681A3E00481C84;
+			packageReferences = (
+				AF0FB96228681A7E00481C84 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AF0FB94C28681A3E00481C84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF0FB96228681A7E00481C84 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF0FB96328681A7E00481C84 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF0FB96228681A7E00481C84 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF0FB94328681A3E00481C84 /* Project object */;
 }
